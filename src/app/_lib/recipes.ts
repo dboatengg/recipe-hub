@@ -6,7 +6,8 @@ export const recipes = [
     title: "Chocolate Cake Slice",
     description: "Rich chocolate cake with dark frosting, perfect for dessert lovers.",
     ingredients: ["Flour", "Cocoa Powder", "Eggs", "Sugar", "Butter"],
-    image: "/images/chocolate-cake.jpg",
+    imageThumb: "/chocolate-cake-thumb.jpg",
+    imageHeader: "/chocolate-cake-header.jpg",
   },
   {
     category: "desserts",
@@ -14,7 +15,8 @@ export const recipes = [
     title: "Vanilla Cupcakes",
     description: "Soft and fluffy cupcakes with a sweet vanilla finish.",
     ingredients: ["Flour", "Eggs", "Vanilla", "Sugar", "Milk"],
-    image: "/images/vanilla-cupcakes.jpg",
+    imageThumb: "/vanilla-cupcakes-thumb.jpg",
+    imageHeader: "/vanilla-cupcakes-header.jpg",
   },
 
   // 🥗 Salads
@@ -24,7 +26,8 @@ export const recipes = [
     title: "Greek Salad",
     description: "Fresh salad with tomatoes, cucumbers, olives, and feta cheese.",
     ingredients: ["Tomatoes", "Cucumber", "Olives", "Feta", "Olive Oil"],
-    image: "/images/greek-salad.jpg",
+    imageThumb: "/greek-salad-thumb.jpg",
+    imageHeader: "/greek-salad-header.jpg",
   },
   {
     category: "salads",
@@ -32,7 +35,8 @@ export const recipes = [
     title: "Healthy Salad Bowl",
     description: "A wholesome bowl packed with greens and crunchy veggies.",
     ingredients: ["Lettuce", "Carrots", "Chickpeas", "Avocado", "Dressing"],
-    image: "/images/healthy-salad.jpg",
+    imageThumb: "/healthy-salad-thumb.jpg",
+    imageHeader: "/healthy-salad-header.jpg",
   },
 
   // 🍝 Main Dishes
@@ -42,7 +46,8 @@ export const recipes = [
     title: "Spaghetti Carbonara",
     description: "Classic Italian pasta with creamy sauce and crispy bacon.",
     ingredients: ["Spaghetti", "Eggs", "Parmesan", "Bacon", "Pepper"],
-    image: "/images/carbonara.jpg",
+    imageThumb: "/carbonara-thumb.jpg",
+    imageHeader: "/carbonara-header.jpg",
   },
   {
     category: "main-dishes",
@@ -50,7 +55,8 @@ export const recipes = [
     title: "Grilled Chicken Plate",
     description: "Juicy grilled chicken served with seasoned rice and salad.",
     ingredients: ["Chicken", "Paprika", "Garlic", "Rice", "Greens"],
-    image: "/images/grilled-chicken.jpg",
+    imageThumb: "/grilled-chicken-thumb.jpg",
+    imageHeader: "/grilled-chicken-header.jpg",
   },
 
   // 🍞 Breakfast
@@ -60,7 +66,8 @@ export const recipes = [
     title: "Pancakes with Syrup",
     description: "Fluffy golden pancakes drizzled with maple syrup.",
     ingredients: ["Flour", "Milk", "Eggs", "Butter", "Syrup"],
-    image: "/images/pancakes.jpg",
+    imageThumb: "/pancakes-thumb.jpg",
+    imageHeader: "/pancakes-header.jpg",
   },
   {
     category: "breakfast",
@@ -68,7 +75,8 @@ export const recipes = [
     title: "Avocado Toast",
     description: "Crispy toast topped with mashed avocado and chili flakes.",
     ingredients: ["Bread", "Avocado", "Salt", "Lime", "Chili"],
-    image: "/images/avocado-toast.jpg",
+    imageThumb: "/avocado-toast-thumb.jpg",
+    imageHeader: "/avocado-toast-header.jpg",
   },
 
   // 🍵 Soups
@@ -78,7 +86,8 @@ export const recipes = [
     title: "Chicken Noodle Soup",
     description: "Comforting soup made with chicken broth, noodles, and veggies.",
     ingredients: ["Chicken", "Noodles", "Carrots", "Celery", "Onion"],
-    image: "/images/chicken-noodle.jpg",
+    imageThumb: "/chicken-noodle-thumb.jpg",
+    imageHeader: "/chicken-noodle-header.jpg",
   },
   {
     category: "soups",
@@ -86,7 +95,8 @@ export const recipes = [
     title: "Tomato Soup",
     description: "Smooth tomato soup with a hint of basil.",
     ingredients: ["Tomatoes", "Onion", "Garlic", "Cream", "Basil"],
-    image: "/images/tomato-soup.jpg",
+    imageThumb: "/tomato-soup-thumb.jpg",
+    imageHeader: "/tomato-soup-header.jpg",
   },
 
   // 🍹 Drinks
@@ -96,7 +106,8 @@ export const recipes = [
     title: "Iced Tea",
     description: "Cool and refreshing black tea served over ice.",
     ingredients: ["Black Tea", "Lemon", "Ice", "Sugar", "Mint"],
-    image: "/images/iced-tea.jpg",
+    imageThumb: "/iced-tea-thumb.jpg",
+    imageHeader: "/iced-tea-header.jpg",
   },
   {
     category: "drinks",
@@ -104,7 +115,8 @@ export const recipes = [
     title: "Fruit Smoothie",
     description: "A vibrant blend of tropical fruits and yogurt.",
     ingredients: ["Banana", "Mango", "Pineapple", "Yogurt"],
-    image: "/images/smoothie.jpg",
+    imageThumb: "/smoothie-thumb.jpg",
+    imageHeader: "/smoothie-header.jpg",
   },
 
   // 🍽 General
@@ -114,7 +126,8 @@ export const recipes = [
     title: "Plated Dish",
     description: "Beautifully presented gourmet-style food on a plate.",
     ingredients: ["Chef's Choice"],
-    image: "/images/plated-dish.jpg",
+    imageThumb: "/plated-dish-thumb.jpg",
+    imageHeader: "/plated-dish-header.jpg",
   },
   {
     category: "general",
@@ -122,6 +135,7 @@ export const recipes = [
     title: "Kitchen Ingredients",
     description: "A flat lay of fresh ingredients for everyday cooking.",
     ingredients: ["Vegetables", "Spices", "Oil", "Herbs"],
-    image: "/images/kitchen-flatlay.jpg",
+    imageThumb: "/kitchen-flatlay-thumb.jpg",
+    imageHeader: "/kitchen-flatlay-header.jpg",
   },
 ];
