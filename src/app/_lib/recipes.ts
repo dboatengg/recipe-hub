@@ -118,24 +118,4 @@ export const recipes = [
     imageThumb: "/smoothie-thumb.jpg",
     imageHeader: "/smoothie-header.jpg",
   },
-
-  // 🍽 General
-  {
-    category: "general",
-    slug: "plated-dish",
-    title: "Plated Dish",
-    description: "Beautifully presented gourmet-style food on a plate.",
-    ingredients: ["Chef's Choice"],
-    imageThumb: "/plated-dish-thumb.jpg",
-    imageHeader: "/plated-dish-header.jpg",
-  },
-  {
-    category: "general",
-    slug: "kitchen-ingredients",
-    title: "Kitchen Ingredients",
-    description: "A flat lay of fresh ingredients for everyday cooking.",
-    ingredients: ["Vegetables", "Spices", "Oil", "Herbs"],
-    imageThumb: "/kitchen-flatlay-thumb.jpg",
-    imageHeader: "/kitchen-flatlay-header.jpg",
-  },
 ];
