@@ -35,7 +35,7 @@ export default function HomePage() {
               </div>
               <div className="p-4 bg-orange-50 border border-orange-200">
                 <h3 className="text-lg font-semibold text-orange-900">{recipe.title}</h3>
-                <p className="text-sm text-orange-700 capitalize">{recipe.category.replace("-", " ")}</p>
+                <p className="text-sm text-orange-700 capitalize">{recipe.category}</p>
               </div>
             </Link>
           ))}
