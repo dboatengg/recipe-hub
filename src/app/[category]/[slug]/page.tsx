@@ -3,15 +3,15 @@ import Image from "next/image";
 import { recipes } from "../../../../_lib/recipes";
 import Link from "next/link";
 
-interface Props {
-    params: {
+interface PageProps {
+    params: Promise<{
         category: string;
         slug: string;
-    };
+    }>;
 }
 
-export default async function RecipePage({ params }: Props) {
-    const { category, slug } = params;
+export default async function RecipePage({ params }: PageProps) {
+    const { category, slug } = await params;
 
     const recipe = recipes.find(
         (r) => r.category === category && r.slug === slug
