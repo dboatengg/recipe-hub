@@ -16,19 +16,26 @@ Recipe Hub is a minimal, modern recipe browsing app built using the **Next.js Ap
 - ✅ Clean, mobile-friendly UI with Tailwind CSS
 
 ## 📂 Folder Structure
+
+```
 /app
   ├─ layout.tsx                 
   ├─ page.tsx            
-  ├─ [category]/[slug]/           
+  ├─ [category]/
+  │   └─ [slug]/
+  │       └─ page.tsx
+  ├─ favorites/
   │   └─ page.tsx
-  ├─ favorites/      
-  │   └─ page.tsx
+
 /hooks
   └─ useFavorites.ts
+
 /public
   └─ images/               
+
 /_lib
   └─ recipes.ts
+```
 
 
 ## 💡 Ideas for Next Steps
