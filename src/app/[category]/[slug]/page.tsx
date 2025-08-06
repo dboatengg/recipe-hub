@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { recipes } from "../../../../_lib/recipes";
+import Link from "next/link";
 
 interface Props {
     params: {
@@ -45,9 +46,9 @@ export default async function RecipePage({ params }: Props) {
 
             {/* Back Link */}
             <div className="mt-10">
-                <a href="/" className="text-orange-600 hover:underline">
+                <Link href="/" className="text-orange-600 hover:underline">
                     ← Back to homepage
-                </a>
+                </Link>
             </div>
         </div>
     );
