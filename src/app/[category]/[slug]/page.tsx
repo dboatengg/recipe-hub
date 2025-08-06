@@ -10,7 +10,7 @@ interface Props {
 }
 
 export default async function RecipePage({ params }: Props) {
-    const { category, slug } = params;
+    const { category, slug } = await params;
 
     const recipe = recipes.find(
         (r) => r.category === category && r.slug === slug

@@ -20,7 +20,7 @@ export default function HomePage() {
           {recipes.map((recipe) => (
             <Link
               key={recipe.slug}
-              href={`${recipe.category}/${recipe.slug}`}
+              href={`/${recipe.category}/${recipe.slug}`}
               className="group block rounded-xl overflow-hidden shadow hover:shadow-lg transition"
             >
               <div className="relative w-full aspect-square">
