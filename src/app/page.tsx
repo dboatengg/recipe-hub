@@ -53,7 +53,7 @@ export default function HomePage() {
                   <h3 className="text-lg font-semibold text-orange-900">{recipe.title}</h3>
                   <button
                     onClick={(e) => toggleFavorite(recipe.slug, e)}
-                    className="text-2xl sm:text-xl hover:scale-110 transition"
+                    className="text-3xl sm:text-xl hover:scale-110 transition"
                     aria-label="Toggle Favorite"
                   >
                     {favorites.includes(recipe.slug) ? "❤️" : "🤍"}
