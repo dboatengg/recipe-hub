@@ -14,7 +14,7 @@ export default function HomePage() {
       <header className="mb-12">
         <h1 className="text-4xl font-bold text-center mb-2">🍽 Recipe Hub</h1>
         <p className="text-center text-gray-600">
-          Discover delicious international recipes: from quick breakfasts to indulgent desserts.
+          Discover delicious international recipes: from quick breakfasts to delicious desserts.
         </p>
       </header>
 
@@ -53,7 +53,7 @@ export default function HomePage() {
                   <h3 className="text-lg font-semibold text-orange-900">{recipe.title}</h3>
                   <button
                     onClick={(e) => toggleFavorite(recipe.slug, e)}
-                    className="text-xl hover:scale-110 transition"
+                    className="text-2xl sm:text-xl hover:scale-110 transition"
                     aria-label="Toggle Favorite"
                   >
                     {favorites.includes(recipe.slug) ? "❤️" : "🤍"}
