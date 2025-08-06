@@ -19,19 +19,21 @@ Recipe Hub is a minimal, modern recipe browsing app built using the **Next.js Ap
 /app
   ├─ layout.tsx                 
   ├─ page.tsx            
-  ├─ [category]/[slug]/                   
-  │   └─ /page.tsx
-  ├─ (private)/favorites/      
-      └─ page.tsx
+  ├─ [category]/[slug]/           
+  │   └─ page.tsx
+  ├─ favorites/      
+  │   └─ page.tsx
+/hooks
+  └─ useFavorites.ts
 /public
   └─ images/               
-/lib
-  └─ recipes.ts                
+/_lib
+  └─ recipes.ts
 
 
 ## 💡 Ideas for Next Steps
 - [ ] Add a real CMS (like Sanity or Strapi)  
 - [ ] Add search or filtering  
-- [ ] Save favorites with localStorage  
+- [x] Save favorites with localStorage  
 - [ ] Add cooking instructions  
 - [ ] Deploy on Vercel  
