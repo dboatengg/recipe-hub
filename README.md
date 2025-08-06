@@ -5,7 +5,7 @@ Recipe Hub is a minimal, modern recipe browsing app built using the **Next.js Ap
 ## 🚀 Features
 
 - ✅ App Router with file-based routing
-- ✅ Nested dynamic routes (`/recipes/[category]/[slug]`)
+- ✅ Nested dynamic routes (`/[category]/[slug]`)
 - ✅ Section-specific layouts (for recipes)
 - ✅ Static and dynamic metadata (SEO-friendly pages)
 - ✅ Custom 404 handling
@@ -13,15 +13,14 @@ Recipe Hub is a minimal, modern recipe browsing app built using the **Next.js Ap
 - ✅ File colocation (styles and components near routes)
 - ✅ Route group for `/favorites` (hidden from navigation)
 - ✅ Responsive images with Next.js `<Image />`
+- ✅ Clean, mobile-friendly UI with Tailwind CSS
 
 ## 📂 Folder Structure
 /app
   ├─ layout.tsx                 
   ├─ page.tsx            
-  ├─ recipes/                   
-  │   ├─ layout.tsx
-  │   ├─ page.tsx
-  │   └─ [category]/[slug]/page.tsx
+  ├─ [category]/[slug]/                   
+  │   └─ /page.tsx
   ├─ (private)/favorites/      
       └─ page.tsx
 /public
