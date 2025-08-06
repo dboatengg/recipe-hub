@@ -42,4 +42,4 @@ Recipe Hub is a minimal, modern recipe browsing app built using the **Next.js Ap
 - [ ] Add search or filtering  
 - [x] Save favorites with localStorage  
 - [ ] Add cooking instructions  
-- [ ] Deploy on Vercel  
+- [x] Deploy on Vercel  
