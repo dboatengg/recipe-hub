@@ -4,6 +4,7 @@ import { useFavorites } from "../../_hooks/useFavorites";
 import Image from "next/image";
 import Link from "next/link";
 import { recipes } from "../../_lib/recipes";
+import { Heart, HeartOff } from "lucide-react";
 
 export default function HomePage() {
   const { favorites, toggleFavorite } = useFavorites();
@@ -51,13 +52,19 @@ export default function HomePage() {
               <div className="p-4 bg-orange-50 border border-orange-200">
                 <div className="flex items-start justify-between">
                   <h3 className="text-lg font-semibold text-orange-900">{recipe.title}</h3>
+
                   <button
                     onClick={(e) => toggleFavorite(recipe.slug, e)}
-                    className="text-3xl sm:text-xl hover:scale-110 transition"
+                    className="hover:scale-110 transition"
                     aria-label="Toggle Favorite"
                   >
-                    {favorites.includes(recipe.slug) ? "❤️" : "🤍"}
+                    <Heart
+                      className="w-9 h-9 sm:w-6 sm:h-6"
+                      fill={favorites.includes(recipe.slug) ? "#dc2626" : "#fef3c7"}
+                      color={favorites.includes(recipe.slug) ? "#dc2626" : "#f59e0b"}
+                    />
                   </button>
+
                 </div>
                 <p className="text-sm text-orange-700 capitalize">{recipe.category}</p>
               </div>
