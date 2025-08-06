@@ -14,8 +14,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Recipe Hub",
-  description: "Discover delicious international recipes: from quick breakfasts to indulgent desserts.",
-};
+  description: "Discover delicious international recipes.",
+  icons: {
+    icon: "/favicon.png",
+  }
+}
 
 export default function RootLayout({
   children,
