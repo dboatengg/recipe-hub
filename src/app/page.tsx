@@ -1,10 +1,15 @@
+"use client";
+
+import { useFavorites } from "../../_hooks/useFavorites";
 import Image from "next/image";
 import Link from "next/link";
 import { recipes } from "../../_lib/recipes";
 
 export default function HomePage() {
+  const { favorites, toggleFavorite } = useFavorites();
+
   return (
-    <main className="max-w-6xl mx-auto px-6 py-10 ">
+    <main className="max-w-6xl mx-auto px-6 py-10">
       {/* Header */}
       <header className="mb-12">
         <h1 className="text-4xl font-bold text-center mb-2">🍽 Recipe Hub</h1>
@@ -15,7 +20,17 @@ export default function HomePage() {
 
       {/* Recipe Grid */}
       <section>
-        <h2 className="text-2xl font-semibold mb-6">Browse Recipes</h2>
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-2xl font-semibold">Browse Recipes</h2>
+          <Link
+            href="/favorites"
+            className="text-sm text-orange-600 hover:underline font-medium"
+          >
+            ❤️ View Favorites
+          </Link>
+        </div>
+
+        {/* <h2 className="text-2xl font-semibold mb-6">Browse Recipes</h2> */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {recipes.map((recipe) => (
             <Link
@@ -34,7 +49,16 @@ export default function HomePage() {
                 />
               </div>
               <div className="p-4 bg-orange-50 border border-orange-200">
-                <h3 className="text-lg font-semibold text-orange-900">{recipe.title}</h3>
+                <div className="flex items-start justify-between">
+                  <h3 className="text-lg font-semibold text-orange-900">{recipe.title}</h3>
+                  <button
+                    onClick={(e) => toggleFavorite(recipe.slug, e)}
+                    className="text-xl hover:scale-110 transition"
+                    aria-label="Toggle Favorite"
+                  >
+                    {favorites.includes(recipe.slug) ? "❤️" : "🤍"}
+                  </button>
+                </div>
                 <p className="text-sm text-orange-700 capitalize">{recipe.category}</p>
               </div>
             </Link>
