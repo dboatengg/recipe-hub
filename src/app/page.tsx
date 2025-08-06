@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { recipes } from "./_lib/recipes";
+import { recipes } from "../../_lib/recipes";
 
 export default function HomePage() {
   return (
@@ -20,7 +20,7 @@ export default function HomePage() {
           {recipes.map((recipe) => (
             <Link
               key={recipe.slug}
-              href={`/recipes/${recipe.category}/${recipe.slug}`}
+              href={`${recipe.category}/${recipe.slug}`}
               className="group block rounded-xl overflow-hidden shadow hover:shadow-lg transition"
             >
               <div className="relative w-full aspect-square">
